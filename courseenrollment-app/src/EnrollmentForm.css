@@ -1,0 +1,91 @@
+
+
+/* General Styles */
+.enrollmentform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./images/form2.jpg"); /* Replace with the actual path */
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.f {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  height: auto; /* Remove fixed height to allow content to grow */
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(22, 22, 110);
+}
+
+.b1 {
+  display: block;
+  width: 100%; /* Full width buttons */
+  margin-bottom: 10px;
+  margin-top: 65px;
+}
+
+.b1:hover {
+  background-color: green;
+}
+
+.alert {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Alert1, .Alert2 {
+  max-width: 500px;
+  margin: 20px auto; /* Center the alert message */
+  text-align: center;
+}
+
+/* Responsive Styles */
+
+/* For screens 768px and smaller */
+@media (max-width: 768px) {
+  .f {
+      padding: 15px;
+      margin: 10px;
+      max-width: 90%; /* Reduce width on smaller screens */
+  }
+
+  h4 {
+      font-size: 18px; /* Reduce heading size */
+  }
+
+  .b1 {
+      margin-top: 30px; /* Adjust button margin for smaller screens */
+  }
+}
+
+/* For screens 576px and smaller (e.g., smartphones) */
+@media (max-width: 576px) {
+  .f {
+      padding: 10px;
+      font-size: 14px; /* Reduce font size */
+  }
+
+  h4 {
+      font-size: 16px; /* Further reduce heading size */
+  }
+
+  .b1 {
+      font-size: 14px; /* Adjust button font size */
+      padding: 8px; /* Adjust button padding */
+      margin-top: 20px;
+  }
+}

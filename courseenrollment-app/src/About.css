@@ -1,0 +1,60 @@
+.about{
+    height: 100%;
+    width: 100%;
+  }
+  
+.content
+{
+    width:50%;
+    height:50%;
+    float:left;
+    text-align: justify;
+    padding: 25px;
+    font-size: 16px;
+    background-color: lightgoldenrodyellow;
+}
+.images
+{
+    width:50%;
+    height:50%;
+    float:left;
+}
+.h1
+{
+    text-align: center;
+    color:#043a64;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 1200px) {
+    .content, .images {
+        width: 60%;
+        height: auto;
+    }
+
+    .content {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+}
+
+/* For smaller desktop screens (between 768px and 991px) */
+@media screen and (max-width: 991px) {
+    .content, .images {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+
+    .content {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,107 @@
+.home {
+  height: 150%;
+  width: 100%;
+  background-image: url("./images/homefinal2.jpeg");
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContainer {
+  padding-top: 5%;
+  width: auto;
+  margin-left: 50px;
+}
+
+.headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  height: 30px;
+  font-weight: 500; 
+  color: white;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerContainer h3 {
+  margin-top: 5%;
+  font-size: 22px;
+  color: whitesmoke;
+  font-family: cursive;
+  text-align: left;
+  margin-right: 5%;
+  margin-left: 1%;
+}
+
+.headerContainer button {
+  margin-top: 5%;
+  border: 5px solid transparent; 
+  border-radius: 30px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #c8def0;
+  height: 50px;
+  width: 180px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  margin-bottom: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seeCourses {
+  margin-left: 10px;
+}
+
+.enquiry {
+  margin-left: 5%;
+}
+
+.headerContainer button:hover {
+  background-color: bisque;
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 5px cyan,0 0 25px cyan;
+}
+
+
+@media (max-width: 1200px) {
+  .headerContainer {
+      margin-left: 20px; 
+  }
+
+  .headerContainer h1 {
+      font-size: 32px; 
+  }
+
+  .headerContainer h3 {
+      font-size: 18px; 
+  }
+
+  .headerContainer button {
+      width: 150px; 
+      font-size: 20px; 
+  }
+}
+
+@media (max-width: 800px) {
+  .headerContainer {
+      margin-left: 10px; 
+  }
+
+  .headerContainer h1 {
+      font-size: 28px; 
+  }
+
+  .headerContainer h3 {
+      font-size: 16px; 
+  }
+
+  .headerContainer button {
+      width: 120px; 
+      font-size: 18px; 
+  }
+}
