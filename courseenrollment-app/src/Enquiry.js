@@ -20,12 +20,12 @@ function Enquiry() {
     } else {
       const enquiryData = {
         name: name,
-        phone: phone,
-        email: email
+        phoneNumber: phone,
+        emailAddress: email
       };
 
      
-      axios.post("http://localhost:8080/api/enquiry/save", enquiryData)
+      axios.post("http://localhost:8080/api/enquiries/save", enquiryData)
         .then((response) => {
           console.log("Enquiry submitted successfully: ", response.data);
           setSuccessMsg(true);

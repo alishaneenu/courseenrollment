@@ -22,7 +22,7 @@ function App() {
               <Route path="/contactus"element={<ContactUs/>}/>
               <Route path="/courses"element={<Courses/>}/>
               <Route path="/enquiry"element={<Enquiry/>}/>
-              <Route path="/enrollmentform"element={<EnrollmentForm/>}/>
+              <Route path="/enrollmentform/:courseId"element={<EnrollmentForm/>}/>
               </Routes>
               
               </BrowserRouter>

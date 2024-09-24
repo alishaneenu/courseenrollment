@@ -4,13 +4,16 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Alert } from 'react-bootstrap';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
-function EnrollmentForm({courseid}) {
+
+function EnrollmentForm() {
   const [name1, setName1] = useState("");
   const [phone1, setPhone1] = useState("");
   const [email1, setEmail1] = useState("");
   const [errorMsg1, setErrorMsg1] = useState(false);
   const [successMsg1, setSuccessMsg1] = useState(false);
+  let{courseId}=useParams();
   const resetForm = () => {
     setName1("");
     setEmail1("");
@@ -18,6 +21,7 @@ function EnrollmentForm({courseid}) {
     setErrorMsg1(false);
     setSuccessMsg1(false);
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,13 +31,14 @@ function EnrollmentForm({courseid}) {
     } else {
       
       const registrationData = {
+        courseId:courseId,
         name: name1,
-        mobile: phone1,
-        email: email1
+        mobileNumber: phone1,
+        emailAddress: email1
       };
 
       
-      axios.post('http://localhost:8080/api/registrations/register', registrationData)
+      axios.post('http://localhost:8080/api/registrations/save', registrationData)
         .then(response => {
           console.log(response.data);
           setSuccessMsg1(true);
@@ -92,6 +97,7 @@ function EnrollmentForm({courseid}) {
           <Form.Label>CourseId</Form.Label>
           <Form.Control
             type="text"
+            value={courseId}
             
             
             
