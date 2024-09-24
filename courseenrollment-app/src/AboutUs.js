@@ -20,7 +20,7 @@ Our mission is simple: to bridge the gap between education and industry. In a wo
 <p>EduTech’s courses are crafted by industry experts who bring real-world experience and a passion for teaching. knowledge but also share practical insights and hands-on experience, giving students a comprehensive understanding of their chosen fields.Whether you're looking to kickstart your career in tech or upskill to advance in your current role, Edutech is the perfect place to begin. With a variety of courses designed to meet industry demands and expert instructors to guide you along the way, Edutech is committed to your success.</p><p>Our mission is to empower learners with the tools, resources, and support needed to excel in their careers and stay ahead of the technological curve. We believe that continuous learning and adaptability are key to success, and we strive to provide an environment where students can unlock their full potential.Our Vision
 To become a global leader in technology education by continuously evolving our courses and services to meet the changing needs of the industry and the learners we serve.</p>
         </div>
-        <div className='images'><img src={image}alt="aboutus" style={{width:'674px',height:'auto'}}></img></div>
+        <div className='images'><img src={image}alt="aboutus" style={{width:'571px',height:'755px'}}></img></div>
         <Footer/>
         </div>
   )

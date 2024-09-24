@@ -25,7 +25,7 @@
     color:#043a64;
     font-family: 'Times New Roman', Times, serif;
 }
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     .content, .images {
         width: 60%;
         height: auto;
@@ -39,10 +39,10 @@
     .h1 {
         font-size: 28px;
     }
-}
+}*/
 
 /* For smaller desktop screens (between 768px and 991px) */
-@media screen and (max-width: 991px) {
+/*@media screen and (max-width: 991px) {
     .content, .images {
         width: 100%;
         float: none;
@@ -57,4 +57,4 @@
     .h1 {
         font-size: 24px;
     }
-}
+}*/
